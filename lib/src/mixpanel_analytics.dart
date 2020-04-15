@@ -35,7 +35,7 @@ class MixpanelAnalytics {
   String _token;
 
   // If present and equal to true, more detailed information will be printed on error.
-  bool _verbose;
+  bool _verbose = false;
 
   // In case we use [MixpanelAnalytics.batch()] we will send analytics every [uploadInterval]
   // Will be zero by default
