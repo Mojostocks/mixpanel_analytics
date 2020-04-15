@@ -163,6 +163,10 @@ class MixpanelAnalytics {
     _userId$?.listen((id) => _userId = id);
   }
 
+  void setUserId(String userId) {
+    _userId = userId;
+  }
+
   /// Sends a request to track a specific event.
   /// Requests will be sent immediately. If you want to batch the events use [MixpanelAnalytics.batch] instead.
   /// [event] will be the name of the event.
